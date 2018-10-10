@@ -16,7 +16,7 @@ notVowels = r"[^aeiouüAEIOUÜāɑ̄ēīōūǖĀĒĪŌŪǕáɑ́éíóúǘÁÉÍ
 def replaceFifthTone(pinyinString):
     string = pinyinString
     while True:
-        newString = re.sub(r"(^|" + notVowels + r")[aeiouüAEIOUÜ]+(" + notVowels + r"|$)", r"\1·\2", string)
+        newString = re.sub(r"(^|" + notVowels + r")[aeiouüAEIOUÜ]+(" + notVowels + r"|$)", r"\1˙\2", string)
         if (newString == string): return string
         string = newString
 
