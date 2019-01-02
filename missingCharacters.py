@@ -1,11 +1,11 @@
 from aqt import mw
 
-sourceField = "Word (in Hanzi)"
+sourceField = "单词（用汉字）"
 destinationFields = [
-    "First Character Blanked Out (if multiple characters & vocab card)",
-    "Second Character Blanked Out (if multiple characters & vocab card)",
-    "Third Character Blanked Out (if multiple characters & vocab card)",
-    "Fourth Character Blanked Out (if multiple characters & vocab card)",
+    "第一个字单词填空",
+    "第二个字单词填空",
+    "第三个字单词填空",
+    "第四个字单词填空",
     ]
 
 def onFocusLost(flag, note, fieldIndex):

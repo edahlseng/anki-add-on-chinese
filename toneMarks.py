@@ -2,8 +2,8 @@ from aqt import mw
 import re
 import functools
 
-sourceField = "Pronunciation (Pinyin)"
-destinationField = "Tone Marks"
+sourceField = "发音（拼音）"
+destinationField = "声调"
 
 def compose(*functions):
     return functools.reduce(lambda f, g: lambda x: f(g(x)), functions, lambda x: x)
